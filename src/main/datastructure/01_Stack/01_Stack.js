@@ -30,7 +30,12 @@ class Stack {
             console.log('Stack Underflow!!');
             return this;
         }
-        let delObj = this.array.splice(this.top, 1);
+        let delObj;
+        if(!this.maxSize) {
+            delObj = this.array.splice(this.top, 1);
+        } else {
+            delObj = delete this.array[this.top];
+        }
         this.top--;
         return delObj;
     }
@@ -55,7 +60,7 @@ class Stack {
     
     isFull() { 
         // insert code (Stack Overflow!)
-        if(isNaN(this.maxSize) || this.top === this.maxSize) {
+        if(this.top === this.maxSize) {
             return true;
         }
         return false;
@@ -68,7 +73,11 @@ class Stack {
             return;
         }
         this.top = -1;
-        this.array.splice(0, this.array.length);
+        if(!this.maxSize) {
+            this.array.splice(0, this.array.length);
+        } else {
+            delete this.array;
+        }
     }
     
     print() {
