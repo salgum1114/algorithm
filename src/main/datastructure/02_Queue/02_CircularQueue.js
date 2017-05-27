@@ -16,7 +16,6 @@ class CircularQueue {
 
         this.rear++;
         this.array[(this.rear) % this.maxSize] = obj;
-        console.log(this.array);
         return this;
     }
 
@@ -26,9 +25,9 @@ class CircularQueue {
             return this;
         }
         this.front++;
+        let delObj = this.array[(this.front) % this.maxSize];
         delete this.array[(this.front) % this.maxSize];
-        console.log(this.array);
-        return this;
+        return delObj;
     }
 
     isFull() {
