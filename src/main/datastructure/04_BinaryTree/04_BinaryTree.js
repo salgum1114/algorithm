@@ -73,8 +73,8 @@ class BinaryTree {
         queue.enqueue(node);
 		while(!queue.isEmpty()) {
 			let node = queue.dequeue();
+            console.log(node);
 			if (node != null) {
-				console.log(node.data);
 				queue.enqueue(node.leftChild);
 				queue.enqueue(node.rightChild);
 			}

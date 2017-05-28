@@ -46,7 +46,6 @@ class Stack {
             console.log('Stack Empty!!');
             return;
         }
-        console.log(this.array[this.top]);
         return this.array[this.top];
     }
     
@@ -83,7 +82,6 @@ class Stack {
     print() {
         // insert code
         console.log(this.array);
-        return this;
     }
 };
 
