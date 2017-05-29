@@ -14,4 +14,4 @@ var hanoi = new Hanoi();
 // 3. 기둥 2에서 N-1개의 원반을 기둥 3으로 옮긴다.
 hanoi.execute(3, 1, 2, 3);
 console.log();
-hanoi.stackExceute(3, 1, 2, 3);
+hanoi.stackExecute(3, 1, 2, 3);

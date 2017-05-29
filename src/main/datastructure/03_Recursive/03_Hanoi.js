@@ -7,7 +7,7 @@ class Hanoi {
         console.log(from+'번 기둥 맨 위의 원판을 '+to+'번 기둥으로 이동');
     }
 
-    stackExceute(n, from, by, to) {
+    stackExecute(n, from, by, to) {
         let stack = new Stack();
         while(true) {
             while(n > 1) {
