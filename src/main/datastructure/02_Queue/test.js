@@ -1,3 +1,5 @@
+'use strict';
+
 // var LinearQueue = require('./02_LinearQueue.js');
 
 // var LQueue = new LinearQueue(3);
@@ -21,10 +23,16 @@ CQueue.enqueue(5);
 CQueue.enqueue(5);
 CQueue.enqueue(5);
 CQueue.dequeue();
-CQueue.clear();
-CQueue.enqueue(3);
-CQueue.enqueue(3);
-CQueue.enqueue(3);
-CQueue.enqueue(3);
-CQueue.enqueue(3);
+CQueue.dequeue();
+CQueue.dequeue();
+CQueue.dequeue();
+CQueue.dequeue();
+CQueue.dequeue();
+// CQueue.clear();
+// CQueue.peek();
+// CQueue.enqueue(3);
+// CQueue.enqueue(3);
+// CQueue.enqueue(3);
+// CQueue.enqueue(3);
+// CQueue.enqueue(3);
 // CQueue.enqueue(3);
