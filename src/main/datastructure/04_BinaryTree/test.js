@@ -37,14 +37,15 @@ BTree.addRightSubTree(node6, node10);
 
 // console.log(BTree.getCount(root));
 // console.log(BTree.getHeight(root));
-// console.log(BTree.preOrder(root));
-// console.log(BTree.inOrder(root));
-// console.log(BTree.postOrder(root));
+// BTree.preOrder(root);
+// BTree.inOrder(root);
+// BTree.postOrder(root);
+// BTree.levelOrder(root);
 
-var BTree2 = BTree.clone();
+// var BTree2 = BTree.clone();
 // console.log(BTree2.getCount(root));
 // console.log(BTree2.getHeight(root));
 // BTree2.preOrder(root);
 // BTree2.inOrder(root);
 // BTree2.postOrder(root);
-BTree2.levelOrder(root);
+// BTree2.levelOrder(root);

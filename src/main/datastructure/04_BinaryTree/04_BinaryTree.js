@@ -44,11 +44,11 @@ class BinaryTree {
         return height;
     }
 
-    preOrder(node) {
+    preOrder(node, who) {
         if(node) {
             console.log(node.data);
-            this.preOrder(node.leftChild);
-            this.preOrder(node.rightChild);
+            this.preOrder(node.leftChild, '1');
+            this.preOrder(node.rightChild, '2');
         }
     }
 
@@ -73,8 +73,8 @@ class BinaryTree {
         queue.enqueue(node);
 		while(!queue.isEmpty()) {
 			let node = queue.dequeue();
-            console.log(node);
 			if (node != null) {
+                console.log(node.data);
 				queue.enqueue(node.leftChild);
 				queue.enqueue(node.rightChild);
 			}
