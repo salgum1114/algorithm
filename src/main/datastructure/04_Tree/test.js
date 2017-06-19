@@ -1,17 +1,18 @@
-// var BinarySearchTree = require('./04_BinarySearchTree.js');
+var BinarySearchTree = require('./04_BinarySearchTree.js');
 // var BinaryTree = require('./04_BinaryTree.js');
-var Heap = require('./04_Heap.js');
-// var Node = require('./04_Node.js');
+// var Heap = require('./04_Heap.js');
+var Node = require('./04_Node.js');
 
-// var BST = new BinarySearchTree();
-// BST.insertNode(5);
-// BST.insertNode(8);
-// BST.insertNode(10);
+var BST = new BinarySearchTree();
+BST.insertNode(5);
+BST.insertNode(8);
+BST.insertNode(10);
+BST.insertNode(12);
 // BST.insertNode(4);
 // BST.insertNode(3);
 // BST.insertNode(6);
-// BST.removeNode(8);
-// console.log(BST);
+BST.removeNode(5);
+// console.log(BST.root);
 // BST.levelOrder(BST.root);
 
 // var BTree = new BinaryTree();
@@ -63,19 +64,19 @@ var Heap = require('./04_Heap.js');
 // BTree2.postOrder(root);
 // BTree2.levelOrder(root);
 
-var heap = new Heap();
+// var heap = new Heap();
 
-heap.insert(4);
-heap.insert(2);
-heap.insert(3);
-heap.insert(1);
-heap.insert(5);
+// heap.insert(4);
+// heap.insert(2);
+// heap.insert(3);
+// heap.insert(1);
+// heap.insert(5);
 
-heap.print();
+// heap.print();
 
-heap.delete();
-heap.delete();
+// heap.delete();
+// heap.delete();
 
-heap.print();
+// heap.print();
 
-console.log(heap.size);
+// console.log(heap.size);

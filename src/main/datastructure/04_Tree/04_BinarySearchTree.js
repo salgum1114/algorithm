@@ -52,32 +52,37 @@ class BianarySearchTree {
 
         let parent = this.root;
         let tempNode = null;
+        let current;
         while (true) {
             if (parent.data < data) {
-                if (parent.rightChild !== null) {
-                    parent = parent.rightChild;
+                tempNode = parent;
+                current = parent.rightChild;
+                if (current !== null) {
+                    parent = current;
                 } else {
                     break;
                 }
             } else if (parent.data > data) {
-                if (parent.leftChild !== null) {
-                    parent = parent.leftChild;
+                tempNode = parent;
+                current = parent.leftChild;
+                if (current !== null) {
+                    parent = current;
                 } else {
                     break;
                 }
             } else {
+                // console.log(1, current);
                 if (parent.leftChild === null && parent.rightChild === null) {
-                    console.log(parent);
-                    parent = null;
-                    console.log(this.root);
+                    // console.log(parent);
+                    tempNode = parent;
+                    this.root.rightChild = null;
                     console.log(3, parent);
                     break;
                 } 
 
                 if (parent.leftChild === null) {
-                    tempNode = parent;
-                    parent = parent.rightChild;
-                    console.log(1, parent);
+                    tempNode.rightChild = parent.rightChild;
+                    console.log(this.root);
                     break;
                 } else if (parent.rightChild === null) {
                     tempNode = parent;
