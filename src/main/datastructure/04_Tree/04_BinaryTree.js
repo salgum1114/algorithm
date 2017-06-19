@@ -24,7 +24,7 @@ class BinaryTree {
         rootNode.rightChild = targetRightNode;
     }
 
-    getRoot() {
+    get root() {
         return this.root;
     }
 
