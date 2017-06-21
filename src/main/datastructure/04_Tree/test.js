@@ -1,17 +1,17 @@
-var BinarySearchTree = require('./04_BinarySearchTree.js');
+// var BinarySearchTree = require('./04_BinarySearchTree.js');
 // var BinaryTree = require('./04_BinaryTree.js');
 // var Heap = require('./04_Heap.js');
-var Node = require('./04_Node.js');
+// var Node = require('./04_Node.js');
 
-var BST = new BinarySearchTree();
-BST.insertNode(5);
-BST.insertNode(8);
-BST.insertNode(10);
-BST.insertNode(12);
+// var BST = new BinarySearchTree();
+// BST.insertNode(5);
+// BST.insertNode(8);
+// BST.insertNode(10);
+// BST.insertNode(12);
 // BST.insertNode(4);
 // BST.insertNode(3);
 // BST.insertNode(6);
-BST.removeNode(5);
+// BST.removeNode(5);
 // console.log(BST.root);
 // BST.levelOrder(BST.root);
 

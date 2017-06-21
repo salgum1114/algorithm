@@ -45,17 +45,17 @@ class Heap {
             left = (root + 1) * 2 - 1;
             right = (root + 1) * 2;
 
-            if (this.size <= left) {
+            if (this.size <= left) { // 자식 노드 없음
                 break;
-            } else if (this.size <= right) {
-                if (this.array[root] < this[left]) {
+            } else if (this.size <= right) { // 루트 기준으로 왼쪽 차일드만 있을 경우
+                if (this.array[root] < this.array[left]) {
                     this.swap(left, root);
                     root = left;
                 } else {
                     break;
                 }
-            } else {
-                if (this.array[root] < this.array[left] && this.array[root] < this.array[right]) {
+            } else { // 루트 기준으로 양쪽 차일드가 다 있는 경우
+                if (this.array[root] < this.array[left] && this.array[root] < this.array[right]) { // 양쪽 자식이 부모보다 클 경우
                     if(this.array[left] < this.array[right]) {
                         this.swap(right, root);
                         root = right;
@@ -63,10 +63,10 @@ class Heap {
                         this.swap(left, root);
                         root = left;
                     }
-                } else if (this.array[root] < this.array[left]) {
+                } else if (this.array[root] < this.array[left]) { // 왼쪽 자식이 클 경우
                     this.swap(left, root);
                     root = left;
-                } else if (this.array[root] < this.array[right]) {
+                } else if (this.array[root] < this.array[right]) { // 오른쪽 자식이 클 경우
                     this.swap(right, root);
                     root = right;
                 } else {
