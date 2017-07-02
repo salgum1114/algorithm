@@ -1,7 +1,28 @@
-const BubbleSort = require('./06_BubbleSort.js');
+const array = [];
+for(let i = 0; i < 20; i++) {
+    array.push(Math.round(Math.random() * 100));
+}
 
-const bubbleSort = new BubbleSort();
+// const BubbleSort = require('./06_BubbleSort.js');
+// const bubbleSort = new BubbleSort();
 
-const array = [7, 4, 11, 9, 2];
-const sortArray = bubbleSort.sort(array);
-console.log(sortArray);
+// const bubbleArray = bubbleSort.sort(array);
+// console.log(bubbleArray);
+
+// const InsertionSort = require('./06_InsertionSort.js');
+// const insertionSort = new InsertionSort();
+
+// const isnertionArray = insertionSort.sort(array);
+// console.log(isnertionArray);
+
+// const SelectionSort = require('./06_SelectionSort.js');
+// const selectionSort = new SelectionSort();
+
+// const selectionArray = selectionSort.sort(array);
+// console.log(selectionArray);
+
+const QuickSort = require('./06_QuickSort.js');
+const quickSort = new QuickSort();
+
+const quickArray = quickSort.sort(array);
+console.log(quickArray);
