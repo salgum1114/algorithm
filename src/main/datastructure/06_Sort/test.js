@@ -21,8 +21,13 @@ for(let i = 0; i < 20; i++) {
 // const selectionArray = selectionSort.sort(array);
 // console.log(selectionArray);
 
-const QuickSort = require('./06_QuickSort.js');
-const quickSort = new QuickSort();
+// const QuickSort = require('./06_QuickSort.js');
+// const quickSort = new QuickSort();
 
-const quickArray = quickSort.sort(array);
-console.log(quickArray);
+// const quickArray = quickSort.sort(array);
+// console.log(quickArray);
+
+const RadixSort = require('./06_RadixSort.js');
+const radixSort = new RadixSort();
+const radixArray = radixSort.sortLSD(array, 3);
+console.log(radixArray);
